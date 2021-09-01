@@ -5,11 +5,11 @@ const SearchBar = ({ handleSearchBarChange }) => {
     <form action="">
       <div className="form-group row">
         {/* <label className="control-label" htmlFor="">Search</label> */}
-        <div className="col-9">
-          <input className="form-control" type="text" onChange={handleSearchBarChange} />
+        <div className="col-10">
+          <input className="form-control" type="text" placeholder="Search entries..." onChange={handleSearchBarChange} />
         </div>
-        <div className="col-3">
-          <input className="form-control" type="submit" value="Search" />
+        <div className="col-2">
+          <input type="submit" className="form-control" value="&#128269;" />
         </div>
       </div>
     </form>

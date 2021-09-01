@@ -7,9 +7,16 @@
 #root {
   height: 100vh;
   width: 100vw;
-  /* font-family: 'Almarai', sans-serif; */
-  font-family: 'Spartan', sans-serif;
+  font-family: 'Almarai', sans-serif;
+  /* font-family: 'Spartan', sans-serif; */
   /* position: absolute; */
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100vw;
+  min-height: 100vh;
 }
 
 .main-container {
@@ -31,10 +38,12 @@
 
 /*--NAV BAR--*/
 .logo {
-  margin: 0px;
+  margin-left: 20px;
   padding: 0px;
   float: left;
+  fill: white;
 }
+
 
 .nav-container {
   height: 100vh;
@@ -179,3 +188,169 @@
 }
 
 /* END OF PROFILE SECTION */
+
+
+/*--BIRD PROFILE CSS! Don't touch or else ;)  --*/
+
+.birdProfileContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 11px;
+  grid-row-gap: 10px; */
+}
+
+.birdProfilePic {
+  margin: 10px 40px 10px 150px;
+  padding: 7px;
+  /* background:  rgba(94, 104, 38, .7);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  height: auto;
+  width: 85%; */
+}
+
+.birdProfilePic > img {
+  border-radius: 10px;
+}
+
+.birdBio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+
+}
+
+h1.birdTitle {
+  font-weight: bold;
+}
+
+h3.scientific {
+  color: #808B96;
+}
+
+.paragraphBird {
+  padding: 10px;
+  color: black;
+  font-size: 18px;
+  background: transparent;
+  /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+  height: auto;
+  border: 1px solid #b89a73;
+}
+
+.secondRowBP {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.birdNotes {
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 300px;
+  margin: 20px 50px 40px 40px;
+  padding: 5px;
+  background:  #e0dcd1;
+  /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+}
+
+hr.dash {
+  border: 2px solid #ABB2B9;
+}
+
+
+p.notesText {
+  margin-top: 20px;
+  padding: 7px;
+}
+
+h4.notesTitle {
+  color: #17202A ;
+  margin-left: 5%;
+}
+
+.heatMap {
+  display: flex;
+  justify-content: center;
+  margin: 20px 40px 40px 80px;
+  background:  #e0dcd1;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  height: auto;
+  width: 70%;
+  overflow: "hidden";
+}
+
+
+.viewer {
+  width: 100%;
+  height: 100%;
+}
+
+.buttonSquad {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+button.upButton {
+  border: none;
+  background: transparent;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 40%;
+}
+
+button.upButton:hover {
+  border: none;
+  background: transparent;
+  color: #E9DAC4;
+  width: 100px;
+  margin-top: 10px;
+  margin-left: 40%;
+}
+
+button.downButton {
+  border: none;
+  background: transparent;
+  width: 400px;
+  height: 60px;
+  margin-top: 30px;
+  background: #b8a4a4;
+}
+
+
+button.downButton:hover {
+  border: none;
+  background: transparent;
+  color: #E9DAC4;
+  width: 400px;
+  height: 60px;
+  margin-top: 30px;
+  background: #9c8484;
+}
+
+.birdNotes::-webkit-scrollbar {
+  width: 3px;
+}
+
+.birdNotes::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.birdNotes::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: none;
+}
+
+
+/**END BIRD PROFILE SECTION  */
+

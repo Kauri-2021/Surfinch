@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from "react-google-maps";
 import HeatmapLayer from "react-google-maps/lib/components/visualization/HeatmapLayer";
-import API_KEY from "../../../config.js";
+import { API_KEY } from "../../../config.js";
 
 
 const DisplayMap = (props) => {
@@ -13,13 +13,13 @@ const DisplayMap = (props) => {
   const currentFriendData = props.props.friendData;
   const currentHeatMap = props.props.heatmapLayer;
 
-  //console.log(currentUserData);
+  console.log(currentUserData);
 
   return (
     <GoogleMap
       defaultZoom={props.props.zoom}
       defaultCenter={currentCenter}>
-        {
+        { currentUserData &&
         currentUserData.map((bird, index) => (
         <Marker
         key={index}
@@ -74,6 +74,7 @@ const DisplayMap = (props) => {
 const WrappedMap = withScriptjs(withGoogleMap(props => (<DisplayMap props={props}/>)));
 
 const Map = (props) => {
+
 
   const defaultZoom = props.defaultZoom || 5;
   const defaultCenter = props.defaultCenter || { lat: 39.8283, lng: -98.5795 };

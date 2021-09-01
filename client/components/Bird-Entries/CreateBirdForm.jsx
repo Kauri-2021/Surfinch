@@ -73,11 +73,11 @@ const CreateBirdForm = () => {
         axios.post('/createBird', formData)
           .then(results => { console.log(formData) })
           .catch(error => { if (error) console.log(error); });
-
       })
       .then(() => {
         axios.get('/entries')
           .then(results => { setBirdEntries(results.data) })
+          .then(results => { setFilteredSet(results.data) })
       })
       .catch(error => { if (error) console.log(error); });
   }
@@ -91,7 +91,7 @@ const CreateBirdForm = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container" id="bird-entry-container">
       <SearchBar handleSearchBarChange={handleSearchBarChange} />
 
       <form id="create-entry" onSubmit={handleSubmit}>
@@ -101,7 +101,7 @@ const CreateBirdForm = () => {
             <input className="form-control" type="text" name="bird" onChange={() => { handleInputChange(event, setSpecies) }} />
           </div>
 
-          <div className="col-6 mb-1">
+          <div className="col-6">
             <input className="form-control" type="file" name="birdPhoto" id="fileUpload" accept="image/*" onChange={() => { handleFileUpload(event) }} />
           </div>
         </div>

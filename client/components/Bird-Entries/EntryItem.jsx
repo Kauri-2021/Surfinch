@@ -2,9 +2,9 @@ import React from 'react';
 
 const EntryItem = ({ photo, notes, city, state, name }) => {
   return (
-    <div className="d-flex">
+    <div className="d-flex col-6 border-secondary card">
       <div>
-        <img height='150' width='150' src={photo} className="rounded" />
+        <img height='100' width='100' src={photo} className="card-image-top" />
       </div>
       <div>
         <p>{name}</p>

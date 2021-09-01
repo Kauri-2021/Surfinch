@@ -6,6 +6,16 @@ const Homepage = (props) => {
 
   //PROPS.CURRENTUSER WILL HAVE LOTS OF INFO 4 U
 
+  console.log(props.currentUser);
+
+  // const propz = useSpring({
+  //   to: { opacity: 1, marginTop: 0 },
+  //   from: { opacity: 0, marginTop: 150 },
+  //   config: { duration: 2000 },
+  //   reset: true,
+  //   // delay: 1500,
+  // })
+
   return (
     <div className="home-container">
       <div className="mini-home-container">

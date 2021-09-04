@@ -1,0 +1,40 @@
+#bird-entry-container {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+#bird-entry-container .form-control {
+  font-size: 12px;
+}
+
+#bird-entry-container .btn {
+  background-color: #82857f;
+}
+
+.bird-list {
+  overflow-x: scroll;
+  /* padding: 12px; */
+
+}
+
+.card {
+  /* margin-right: 12px; */
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  margin-bottom: 12px;
+}
+
+.card-header {
+  background-color: #b89a73;
+}
+
+.card-body {
+  background-color: #E9DAC4;
+}
+
+.paddle-button {
+  font-size: 18px;
+  outline: none;
+  border: none;
+  background-color: #fcfaf6;
+  color: #82857f;
+}

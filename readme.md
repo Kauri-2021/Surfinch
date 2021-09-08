@@ -23,7 +23,7 @@ Additionally, in this app, you are able to research essential bird data. Trackin
 - [ ] Obtain the code for this app using the above link or following step:
 	- [ ] Start by cloning:
 ```
-git clone https://github.com/tobefranklyspeaking/ohhhdecisions.git
+git clone https://github.com/Kauri-2021/Surfinch
 ```
 
 

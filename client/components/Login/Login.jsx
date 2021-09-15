@@ -1,8 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
-import Logo from '/public/img/Logo.png';
 import SignUp from './SignUp.jsx';
 import { Link, Switch, useHistory } from 'react-router-dom';
-import '/public/loginStyles.scss'
+// import '../../public/loginStyles.scss';
 import { AuthContext } from '../App.jsx';
 import firebase from 'firebase';
 require('firebase/auth');
@@ -96,19 +95,19 @@ const Login = () => {
   return (
     <div className='loginContainer'>
       <div className="container">
-          <div className="bird-container bird-container--one">
-            <div className="bird bird--one"></div>
-          </div>
-          <div className="bird-container bird-container--two">
-            <div className="bird bird--two"></div>
-          </div>
-          <div className="bird-container bird-container--three">
-            <div className="bird bird--three"></div>
-          </div>
-          <div className="bird-container bird-container--four">
-            <div className="bird bird--four"></div>
-          </div>
+        <div className="bird-container bird-container--one">
+          <div className="bird bird--one"></div>
         </div>
+        <div className="bird-container bird-container--two">
+          <div className="bird bird--two"></div>
+        </div>
+        <div className="bird-container bird-container--three">
+          <div className="bird bird--three"></div>
+        </div>
+        <div className="bird-container bird-container--four">
+          <div className="bird bird--four"></div>
+        </div>
+      </div>
       <div className="headerLogin">
         {/* <h2 className='text-white'>Surfinch</h2> */}
       </div>

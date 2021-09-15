@@ -7,7 +7,7 @@ import NavBar from '../Shared/NavBar.jsx';
 import Map from '../Shared/Map.jsx';
 import LocalBirds from './LocalBirds.jsx';
 import Rankings from '../Shared/Rankings.jsx';
-import { EBIRD_TOKEN } from '/config';
+import { EBIRD_TOKEN } from '../../../config.js';
 import { createClient } from 'pexels';
 
 
@@ -131,9 +131,9 @@ const Homepage = ({ currentUser, location, allBirds }) => {
           </div> : <div className="loading"> <div className="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>  </div>}
         </div>
       </div>
-          <Rankings rankings={ranks} currentUser={currentUser} />
+      <Rankings rankings={ranks} currentUser={currentUser} />
     </div>
   )
 }
 
-      export default Homepage;
+export default Homepage;

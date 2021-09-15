@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { LOC_TOKEN } from '/config.js';
+import { LOC_TOKEN } from '../../../config.js';
 import axios from 'axios';
 import { AuthContext } from '../App.jsx';
 
@@ -60,22 +60,22 @@ const UpdateBirdForm = ({ birdEntry }) => {
     //       formData.append('birdpic_url', `/uploads/${fileUpload.name}`);
     //     }
     //   })
-      // .then(() => {
+    // .then(() => {
 
-        axios.put('/updateBird', {
-          bird: species,
-          date: date,
-          street_sighted: street,
-          city_sighted: city,
-          state_sighted: st,
-          notes: notes,
-          id: eachBird.id
-        })
-          .then(results => {
-            console.log('results from sequel submit', results, event)
+    axios.put('/updateBird', {
+      bird: species,
+      date: date,
+      street_sighted: street,
+      city_sighted: city,
+      state_sighted: st,
+      notes: notes,
+      id: eachBird.id
+    })
+      .then(results => {
+        console.log('results from sequel submit', results, event)
 
-          })
-          .catch(err => console.log(err, 'in update bird form'))
+      })
+      .catch(err => console.log(err, 'in update bird form'))
 
   }
 
@@ -91,9 +91,9 @@ const UpdateBirdForm = ({ birdEntry }) => {
             </div>
 
             <div className="form-group col-6">
-            {/* <label className="control-label" htmlFor="">Date</label>
+              {/* <label className="control-label" htmlFor="">Date</label>
             <input type="date" name="date" className="form-control" value={`${date.getFullYear()}-${date.getMonth().toString().length < 2 ? '0' + (parseInt(date.getMonth()) + 1).toString() : (parseInt(date.getMonth()) + 1).toString()}-${date.getDate().toString().length < 2 ? '0' + date.getDate() : date.getDate()}`} required onChange={() => { handleInputChange(event, setDate) }} /> */}
-          </div>
+            </div>
           </div>
           <div className="form-group row align-items-end">
             <div className="form-group col-6">

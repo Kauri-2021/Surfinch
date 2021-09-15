@@ -1,10 +1,10 @@
 import React, { useState, createContext, useEffect } from 'react';
 import { HashRouter as Router, Switch, Route, Link, useHistory, Redirect } from "react-router-dom";
 let firebase = require('firebase/app');
-import { firebaseConfig } from '/client/components/Login/firebase.config.js';
+import { firebaseConfig } from '../../firebase.config.js';
 import axios from 'axios';
-import { LOC_TOKEN } from '/config';
-import { EBIRD_TOKEN } from '/config.js';
+import { LOC_TOKEN } from '../../config.js';
+import { EBIRD_TOKEN } from '../../config.js';
 
 // SHARED COMPONENTS
 import NavBar from './Shared/NavBar.jsx';

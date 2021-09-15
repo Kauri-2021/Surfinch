@@ -5,7 +5,7 @@ import { CgProfile } from 'react-icons/cg';
 import { GiBirdHouse, GiKiwiBird } from 'react-icons/gi';
 import { FaKiwiBird } from 'react-icons/fa';
 import { AiOutlineLogout } from 'react-icons/ai';
-import addFinch from '../../../public/img/converted-addFinch-01 copy.svg';
+// import addFinch from '../../../public/img/converted-addFinch-01 copy.svg';
 import firebase from 'firebase';
 import 'firebase/auth';
 

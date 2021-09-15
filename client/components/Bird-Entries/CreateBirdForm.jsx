@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { LOC_TOKEN } from '/config.js';
+import { LOC_TOKEN } from '../../../config.js';
 import BirdEntryList from './BirdEntryList.jsx';
 import SearchBar from './SearchBar.jsx';
 
@@ -25,17 +25,17 @@ const CreateBirdForm = ({ currentUser, location }) => {
       setSt(location.state);
     }
 
-      var lat = location.lat.toString();
-      var lon = location.lng.toString();
+    var lat = location.lat.toString();
+    var lon = location.lng.toString();
 
-      axios.get(`https://us1.locationiq.com/v1/reverse.php?key=${LOC_TOKEN}&lat=${lat}&lon=${lon}&format=json`)
-        .then(results => {
-          console.log('fsdfk', results.data)
-          setStreet(results.data.address.house_number + " " + results.data.address.road);
-          setCity(results.data.address.city);
-          setSt(results.data.address.state);
-        })
-        .catch(error => { console.log(error); });
+    axios.get(`https://us1.locationiq.com/v1/reverse.php?key=${LOC_TOKEN}&lat=${lat}&lon=${lon}&format=json`)
+      .then(results => {
+        console.log('fsdfk', results.data)
+        setStreet(results.data.address.house_number + " " + results.data.address.road);
+        setCity(results.data.address.city);
+        setSt(results.data.address.state);
+      })
+      .catch(error => { console.log(error); });
 
     axios.get(`/entries/${currentUser.userID}`)
       .then(results => { setBirdEntries(results.data); setFilteredSet(results.data) })
@@ -116,7 +116,7 @@ const CreateBirdForm = ({ currentUser, location }) => {
           <div className="form-group row align-items-end">
             <div className="form-group col-6">
               <label className="control-label" htmlFor="">Species</label>
-              <input className="form-control" type="text" name="bird" value={species} onChange={() => {handleInputChange(event, setSpecies)}} />
+              <input className="form-control" type="text" name="bird" value={species} onChange={() => { handleInputChange(event, setSpecies) }} />
             </div>
 
             <div className="form-group col-6">

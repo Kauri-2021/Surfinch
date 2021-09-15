@@ -35,22 +35,13 @@ const Profile = ({ currentUser }) => {
       .catch((error) => {
         console.log('Error fetching birds: ', error);
       });
-    // axios.get(`/rankings`)
-    //   .then((results) => {
-    //     var rankings = results.data;
-    //     console.log('Ranks: ', rankings);
-    //     setRanks(rankings);
-    //   })
-    //   .catch((error) => {
-    //     console.log('error fetching rankings: ', error);
-    //   });
   }, [])
 
   return (
     <div className="profile-parent">
-       <div className='profile-header'>
-          <h3 className='profileTitle'>Your Profile</h3>
-        </div>
+      <div className='profile-header'>
+        <h3 className='profileTitle'>Your Profile</h3>
+      </div>
       <div className='profile-section'>
         <div className="profile-info">
           <div className='profile-avatar'>
@@ -60,7 +51,7 @@ const Profile = ({ currentUser }) => {
             <h6 className='profile-username'>{currentUser.username}</h6>
           </div>
           <div className='badgeContainer'>
-          <ProfileBadges badges={badges} currentUser={currentUser} profile={currentUser.username} />
+            <ProfileBadges badges={badges} currentUser={currentUser} profile={currentUser.username} />
           </div>
           <div className='profile-details'>
             <div className='user-info-container'>

@@ -14,7 +14,7 @@ const Profile = ({ currentUser }) => {
   // const [ranks, setRanks] = useState([]);
 
   // useEffect(() => {
-
+  // TESTING CI YO
   // }, []);
 
   useEffect(() => {
